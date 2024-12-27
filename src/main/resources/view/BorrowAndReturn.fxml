@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.java.controllers.BorrowAndReturn">
+   <center>
+      <AnchorPane prefHeight="517.0" prefWidth="811.0" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fitHeight="400.0" fitWidth="607.0" opacity="0.85" pickOnBounds="true">
+               <image>
+                  <Image url="@../images/1_6Jp3vJWe7VFlFHZ9WhSJng.jpg" />
+               </image>
+            </ImageView>
+            <Pane layoutX="1.0" prefHeight="52.0" prefWidth="607.0" style="-fx-background-color: #a65f23;">
+               <children>
+                  <Label layoutX="221.0" layoutY="10.0" prefHeight="33.0" prefWidth="157.0" style="-fx-background-color: #a65f23;" text="Borrow &amp; Return" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="16.0" />
+                     </font>
+                  </Label>
+                  <ImageView fitHeight="25.0" fitWidth="27.0" layoutX="499.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/25694.png" />
+                     </image>
+                  </ImageView>
+                  <Button layoutX="531.0" layoutY="13.0" mnemonicParsing="false" onAction="#returnHome" style="-fx-background-color: #341a0e;" text="Home" textFill="#ececec">
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font>
+                  </Button>
+               </children>
+            </Pane>
+            <Label alignment="CENTER" contentDisplay="CENTER" layoutX="172.0" layoutY="241.0" prefHeight="29.0" prefWidth="91.0" style="-fx-background-color: #a65f23;" text="Contact" textFill="WHITE" wrapText="true">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Label>
+            <TextField fx:id="bookName" layoutX="284.0" layoutY="101.0" prefHeight="33.0" prefWidth="165.0" promptText="Book Name" />
+            <Button layoutX="284.0" layoutY="291.0" mnemonicParsing="false" onAction="#issueBook" style="-fx-background-color: #341a0e;" text="Issue" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Button>
+            <Button layoutX="360.0" layoutY="291.0" mnemonicParsing="false" onAction="#returnBook" style="-fx-background-color: #341a0e;" text="Return" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Button>
+            <Label alignment="CENTER" contentDisplay="CENTER" layoutX="173.0" layoutY="103.0" prefHeight="30.0" prefWidth="91.0" style="-fx-background-color: #a65f23;" text="Name" textFill="WHITE" wrapText="true">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Label>
+            <TextField fx:id="contactNo" layoutX="284.0" layoutY="239.0" prefHeight="33.0" prefWidth="151.0" promptText="Member Contact No." />
+            <Label alignment="CENTER" contentDisplay="CENTER" layoutX="173.0" layoutY="147.0" prefHeight="30.0" prefWidth="91.0" style="-fx-background-color: #a65f23;" text="Author" textFill="WHITE" wrapText="true">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" contentDisplay="CENTER" layoutX="171.0" layoutY="193.0" prefHeight="30.0" prefWidth="91.0" style="-fx-background-color: #a65f23;" text="Genre" textFill="WHITE" wrapText="true">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Label>
+            <TextField fx:id="authorName" layoutX="284.0" layoutY="145.0" prefHeight="33.0" prefWidth="165.0" promptText="Author Name" />
+            <TextField fx:id="bookGenre" layoutX="284.0" layoutY="191.0" prefHeight="33.0" prefWidth="165.0" promptText="Genre" />
+            <Label fx:id="error" layoutX="173.0" layoutY="66.0" prefHeight="20.0" prefWidth="425.0" textFill="RED">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>
